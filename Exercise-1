@@ -1,0 +1,21 @@
+import nl.saxion.app.SaxionApp;
+import java.util.Scanner;
+
+public class Application implements Runnable {
+
+    public static void main(String[] args) {
+        SaxionApp.start(new Application(), 640, 200);
+    }
+
+    public void run() {
+        // Write your code here
+
+        // Hier vul je je naam in
+        String first_name;
+        SaxionApp.printLine("Wat is je naam?");
+        first_name = SaxionApp.readString();
+
+        // Hier zul je de output zien
+        SaxionApp.print("Hallo " + first_name);
+            }
+        }
